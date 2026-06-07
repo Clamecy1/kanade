@@ -8,7 +8,7 @@ export default function App() {
       description: 'CET-4 全套练习工具，支持听力真题训练、翻译 AI 评分、词汇练习、错题回顾与学习统计。微信小程序版本，基于 Taro 4.x 跨端框架构建。',
       tags: ['Taro 4.x', 'React 18', 'TypeScript', 'SCSS', 'Supabase'],
       image: '/kanade/cet4-screenshot.png',
-      link: 'https://github.com/Clamecy1/cet4-practice',
+      link: 'https://clamecy1.github.io/cet4-practice',
       github: 'https://github.com/Clamecy1/cet4-practice',
     },
   ]
