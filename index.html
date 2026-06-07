@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fbf7f0" />
+  <title>kanade · 作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Noto+Sans+SC:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fbf7f0;
+      color: #3d3522;
+      font-family: 'Noto Sans SC', 'Inter', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 80px 24px 96px;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .header-username {
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 0.25em;
+      color: #8a7560;
+      text-transform: uppercase;
+    }
+
+    .header-title {
+      margin-top: 16px;
+      font-size: 28px;
+      font-weight: 200;
+      letter-spacing: 0.06em;
+      color: #3d3522;
+    }
+
+    /* Project card */
+    .project-card {
+      display: block;
+      text-decoration: none;
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 16px rgba(60, 40, 20, 0.06), 0 0 0 1px rgba(60, 40, 20, 0.04);
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 24px rgba(60, 40, 20, 0.1), 0 0 0 1px rgba(60, 40, 20, 0.06);
+    }
+
+    .project-card + .project-card {
+      margin-top: 2px;
+    }
+
+    /* Screenshot area */
+    .card-preview {
+      border-radius: 12px;
+      background: #f5f0e6;
+      aspect-ratio: 16 / 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .card-preview-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      color: #b8a990;
+    }
+
+    .card-preview-inner svg {
+      width: 48px;
+      height: 48px;
+    }
+
+    .card-preview-inner span {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+    }
+
+    /* Card info */
+    .card-title {
+      font-size: 18px;
+      font-weight: 450;
+      letter-spacing: 0.02em;
+      color: #3d3522;
+      margin-bottom: 6px;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #8a7560;
+      margin-bottom: 16px;
+    }
+
+    /* Tags */
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .card-tag {
+      border: 1px solid #e5dcc8;
+      border-radius: 999px;
+      padding: 2px 12px;
+      font-size: 11px;
+      letter-spacing: 0.04em;
+      color: #8a7560;
+    }
+
+    /* Actions */
+    .card-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 14px;
+    }
+
+    .card-link {
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: #3d3522;
+      transition: color 0.2s;
+    }
+
+    .project-card:hover .card-link {
+      color: #8a7560;
+    }
+
+    .card-github {
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      color: #b8a990;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .card-github:hover {
+      color: #8a7560;
+    }
+
+    /* Placeholder */
+    .placeholder {
+      border: 1px dashed #d4c8b0;
+      border-radius: 16px;
+      padding: 48px 24px;
+      text-align: center;
+    }
+
+    .placeholder-text {
+      font-size: 14px;
+      color: #b8a990;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .footer-text {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: #c4b8a0;
+    }
+
+    /* Spacer between cards */
+    .card-gap {
+      height: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-username">clamecy1</div>
+      <h1 class="header-title">作品集</h1>
+    </header>
+
+    <!-- Project: CET-4 -->
+    <a href="https://clamecy1.github.io/cet4-practice" target="_blank" rel="noopener noreferrer" class="project-card">
+      <div class="card-preview">
+        <div class="card-preview-inner">
+          <svg fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z"/>
+            <path d="M3 7l9 6 9-6"/>
+          </svg>
+          <span>CET-4 · 听力翻译刷题器</span>
+        </div>
+      </div>
+
+      <h2 class="card-title">CET-4 听力翻译刷题器</h2>
+      <p class="card-desc">英语四级听力与翻译在线练习工具，支持真题训练、AI 评分、错题回顾。</p>
+
+      <div class="card-tags">
+        <span class="card-tag">React</span>
+        <span class="card-tag">Tailwind CSS</span>
+        <span class="card-tag">Supabase</span>
+        <span class="card-tag">Dexie.js</span>
+      </div>
+
+      <div class="card-actions">
+        <span class="card-link">查看项目 →</span>
+        <a href="https://github.com/clamecy1/cet4-practice" target="_blank" rel="noopener noreferrer" class="card-github" onclick="event.stopPropagation()">GitHub</a>
+      </div>
+    </a>
+
+    <div class="card-gap"></div>
+
+    <!-- Placeholder -->
+    <div class="placeholder">
+      <p class="placeholder-text">更多作品即将上线</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-text">kanade</p>
+    </footer>
+  </div>
+</body>
+</html>
