@@ -5,11 +5,11 @@ export default function App() {
     {
       id: 'cet4',
       title: 'CET-4 听力翻译刷题器',
-      description: '英语四级听力与翻译在线练习工具，支持真题训练、AI 评分、错题回顾。',
-      tags: ['React', 'Tailwind CSS', 'Supabase', 'Dexie.js'],
+      description: 'CET-4 全套练习工具，支持听力真题训练、翻译 AI 评分、词汇练习、错题回顾与学习统计。微信小程序版本，基于 Taro 4.x 跨端框架构建。',
+      tags: ['Taro 4.x', 'React 18', 'TypeScript', 'SCSS', 'Supabase'],
       image: '/kanade/cet4-screenshot.png',
-      link: 'https://clamecy1.github.io/cet4-practice',
-      github: 'https://github.com/clamecy1/cet4-practice',
+      link: 'https://github.com/Clamecy1/cet4-practice',
+      github: 'https://github.com/Clamecy1/cet4-practice',
     },
   ]
 
